@@ -105,7 +105,7 @@ router.post('/', csrfProtection, function (req, res, next) {
           // access_token: { foo: 'bar' },
 
           // This data will be available in the ID token.
-          // id_token: { baz: 'bar' },
+            id_token: { email: 'foo@bar.com', role: 'admin' },
         },
 
         // ORY Hydra checks if requested audiences are allowed by the client, so we can simply echo this.
